@@ -1,0 +1,84 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0f9b0f,#38ef7d);
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.app{
+  width:95%;
+  max-width:400px;
+  text-align:center;
+}
+
+.header h1{
+  margin-bottom:10px;
+}
+
+#contador{
+  font-size:2.5rem;
+  font-weight:bold;
+  background:rgba(255,255,255,0.15);
+  padding:10px;
+  border-radius:15px;
+  margin-bottom:20px;
+}
+
+.config{
+  margin-bottom:20px;
+}
+
+select,button{
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  margin-top:10px;
+  font-size:1rem;
+}
+
+button{
+  background:#ffffff;
+  color:#0f9b0f;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#e8ffe8;
+}
+
+#tapArea{
+  background:rgba(255,255,255,0.2);
+  height:250px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:20px;
+  font-size:1.2rem;
+  user-select:none;
+}
+
+#tapArea.active{
+  background:rgba(0,0,0,0.2);
+}
+
+#resultado{
+  margin-top:20px;
+  background:rgba(255,255,255,0.15);
+  padding:15px;
+  border-radius:15px;
+}
+
+.hidden{
+  display:none;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test de Rapidez de Taps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Contador -->
+  <div class="header">
+    <h1>⚡ Test de Rapidez</h1>
+    <div id="contador">0 Taps</div>
+  </div>
+
+  <!-- Configuración -->
+  <div class="config">
+    <label>Tiempo del test:</label>
+    <select id="tiempoSelect">
+      <option value="5">5 segundos</option>
+      <option value="10" selected>10 segundos</option>
+      <option value="15">15 segundos</option>
+      <option value="30">30 segundos</option>
+      <option value="60">60 segundos</option>
+    </select>
+
+    <button id="startBtn">Iniciar</button>
+  </div>
+
+  <!-- Área de taps -->
+  <div id="tapArea">
+    <p>Toca la pantalla lo más rápido posible</p>
+  </div>
+
+  <!-- Resultado -->
+  <div id="resultado" class="hidden">
+    <h2>Resultado</h2>
+    <p id="tapsFinal"></p>
+    <p id="cpsFinal"></p>
+    <p id="calificacion"></p>
+    <button onclick="reiniciar()">Reintentar</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
